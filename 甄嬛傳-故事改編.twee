@@ -1,0 +1,3082 @@
+:: StoryTitle
+ 甄嬛傳-故事改編
+
+
+:: StoryData
+{
+  "ifid": "597C7CEC-EC23-4596-A7C7-3AAAA2C8787D",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "scene1",
+  "zoom": 1
+}
+
+
+:: about {"position":"175,25","size":"100,100"}
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; font-family: serif; color:white;">
+
+    <!-- 背景 -->
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3730.jpeg" style="
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position:absolute;
+        top:0;
+        left:0;
+    ">
+
+    <!-- 遮罩 -->
+    <div style="
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.4);
+    "></div>
+
+    <!-- 花瓣 -->
+    <div class="petals">
+        <div class="petal" style="left:10%; animation-duration:8s;">🌸</div>
+        <div class="petal" style="left:25%; animation-duration:11s;">🌸</div>
+        <div class="petal" style="left:40%; animation-duration:9s;">🌸</div>
+        <div class="petal" style="left:60%; animation-duration:12s;">🌸</div>
+        <div class="petal" style="left:75%; animation-duration:10s;">🌸</div>
+        <div class="petal" style="left:90%; animation-duration:13s;">🌸</div>
+    </div>
+
+    <!-- 標題 -->
+    <div style="
+        position:absolute;
+        top:15%;
+        width:100%;
+        text-align:center;
+        font-size:44px;
+        font-weight:bold;
+        letter-spacing:6px;
+        text-shadow:0 0 10px black, 0 0 20px black;
+    ">
+        關於作品
+    </div>
+
+    <!-- 內容框 -->
+    <div style="
+        position:absolute;
+        top:32%;
+        left:50%;
+        transform:translateX(-50%);
+        width:65%;
+        padding:28px 36px;
+        background:rgba(0,0,0,0.35);
+        border:1px solid rgba(255,255,255,0.25);
+        border-radius:14px;
+        font-size:22px;
+        line-height:1.9;
+        text-shadow:0 0 6px black;
+    ">
+        本作品改編自《甄嬛傳》，以宮廷權謀與人物情感為核心，
+        將原有劇情轉化為互動式敘事體驗。<br><br>
+
+        玩家將透過不同選擇，影響甄嬛在後宮中的命運，
+        包含權力、情感與生存之間的抉擇。<br><br>
+
+        每一次決定，都可能改變角色關係與故事走向，
+        體驗不同結局的可能性。
+        試播集故事大綱
+甄嬛傳-故事改編
+
+分工：
+文本：王志勤、陳溢斌
+簡報：劉宜芩 、邱立瑄 
+UI:李明理
+
+    </div>
+
+    <!-- 返回按鈕 -->
+    <div style="
+        position:absolute;
+        bottom:12%;
+        width:100%;
+        text-align:center;
+    ">
+        <button onclick="SugarCube.Engine.play('scene1')" style="
+            padding:10px 24px;
+            background:rgba(255,255,255,0.15);
+            border:1px solid rgba(255,255,255,0.35);
+            border-radius:10px;
+            color:white;
+            font-size:26px;
+            cursor:pointer;
+            text-shadow:0 0 6px black;
+        ">
+            返回主選單
+        </button>
+    </div>
+
+</div>
+
+
+:: scene1 {"position":"75,100","size":"100,100"}
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; font-family: serif;">
+
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3730.jpeg" style="
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position:absolute;
+        top:0;
+        left:0;
+    ">
+
+    <div style="
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.25);
+    "></div>
+
+    <div class="petals">
+        <div class="petal" style="left:10%; animation-duration:8s;">🌸</div>
+        <div class="petal" style="left:25%; animation-duration:11s;">🌸</div>
+        <div class="petal" style="left:40%; animation-duration:9s;">🌸</div>
+        <div class="petal" style="left:60%; animation-duration:12s;">🌸</div>
+        <div class="petal" style="left:75%; animation-duration:10s;">🌸</div>
+        <div class="petal" style="left:90%; animation-duration:13s;">🌸</div>
+    </div>
+
+    <div style="
+        position:absolute;
+        top:25%;
+        width:100%;
+        text-align:center;
+        font-size:48px;
+        color:white;
+        font-weight:bold;
+        text-shadow:0 0 10px black, 0 0 20px black;
+        letter-spacing:5px;
+    ">
+        甄嬛傳-故事改編
+    </div>
+
+    <div style="
+        position:absolute;
+        bottom:15%;
+        width:100%;
+        text-align:center;
+        color:white;
+    ">
+        <div style="margin:12px 0;">
+            <button onclick="SugarCube.Engine.play('scene2')" style="
+                padding:10px 22px;
+                background:rgba(255,255,255,0.15);
+                border:1px solid rgba(255,255,255,0.35);
+                border-radius:10px;
+                color:white;
+                font-size:28px;
+                cursor:pointer;
+                text-shadow:0 0 6px black;
+            ">
+                開始遊戲
+            </button>
+        </div>
+
+        <div style="margin:12px 0;">
+            <button onclick="SugarCube.Engine.play('about')" style="
+                padding:10px 22px;
+                background:rgba(255,255,255,0.15);
+                border:1px solid rgba(255,255,255,0.35);
+                border-radius:10px;
+                color:white;
+                font-size:28px;
+                cursor:pointer;
+                text-shadow:0 0 6px black;
+            ">
+                關於作品
+            </button>
+        </div>
+    </div>
+
+</div>
+
+
+:: scene2 {"position":"200,100","size":"100,100"}
+<<run setup.playBGM("https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/8c471135929b1798ff515364654f5788_audio.mp3.mp3")>>
+
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; color:white;">
+
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3730.jpeg" style="
+        width:100%; height:100%;
+        object-fit: cover;
+        position:absolute; top:0; left:0;
+    ">
+
+    <div style="
+        position:absolute;
+        width:100%; height:100%;
+        background:rgba(0,0,0,0.45);
+    "></div>
+
+    <div class="petals">
+        <div class="petal" style="left:10%; animation-duration:8s;">🌸</div>
+        <div class="petal" style="left:30%; animation-duration:11s;">🌸</div>
+        <div class="petal" style="left:60%; animation-duration:9s;">🌸</div>
+        <div class="petal" style="left:80%; animation-duration:12s;">🌸</div>
+    </div>
+
+    <div style="
+        position:absolute;
+        top:20%;
+        width:100%;
+        text-align:center;
+        font-size:36px;
+        letter-spacing:4px;
+    ">
+        背景故事
+    </div>
+
+    <div style="
+        position:absolute;
+        top:35%;
+        width:60%;
+        left:20%;
+        font-size:22px;
+        line-height:1.8;
+        text-shadow:0 0 6px black;
+    ">
+        甄嬛因面容神似已故的純元皇后而得到皇帝的注意，
+        進而通過選秀入宮。
+
+        在後宮爾虞我詐的算計中，
+        她逐漸明白自己不過是純元皇后的替身，<br>
+        皇帝從未真正愛過她。
+    </div>
+
+    <div style="position:absolute; bottom:10%; width:100%; text-align:center;">
+        <button onclick="SugarCube.Engine.play('scene2_2')">下一段</button>
+    </div>
+
+</div>
+
+
+:: scene2_2 {"position":"325,100","size":"100,100"}
+
+
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; color:white;">
+
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3730.jpeg" style="
+        width:100%; height:100%;
+        object-fit: cover;
+        position:absolute; top:0; left:0;
+    ">
+
+    <div style="
+        position:absolute;
+        width:100%; height:100%;
+        background:rgba(0,0,0,0.45);
+    "></div>
+
+    <div class="petals">
+        <div class="petal" style="left:15%; animation-duration:9s;">🌸</div>
+        <div class="petal" style="left:40%; animation-duration:12s;">🌸</div>
+        <div class="petal" style="left:70%; animation-duration:10s;">🌸</div>
+    </div>
+
+    <div style="position:absolute; top:20%; width:100%; text-align:center; font-size:36px;">
+    </div>
+
+    <div style="
+        position:absolute;
+        top:35%;
+        width:60%;
+        left:20%;
+        font-size:22px;
+        line-height:1.8;
+    ">
+        甄嬛傷透了心，因誤穿純元皇后舊衣而失寵。
+        在產下朧月公主後，遠走甘露寺修行。<br>
+
+        在宮外受盡欺凌之時，
+        果郡王允禮對她關懷備至，<br>
+        二人漸生情愫。
+    </div>
+
+    <div style="position:absolute; bottom:10%; width:100%; text-align:center;">
+        <button onclick="SugarCube.Engine.play('scene2_3')">下一段</button>
+    </div>
+
+</div>
+
+
+:: scene2_3 {"position":"450,100","size":"100,100"}
+
+
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; color:white;">
+
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3730.jpeg" style="
+        width:100%; height:100%;
+        object-fit: cover;
+        position:absolute; top:0; left:0;
+    ">
+
+    <div style="
+        position:absolute;
+        width:100%; height:100%;
+        background:rgba(0,0,0,0.55);
+    "></div>
+
+    <div class="petals">
+        <div class="petal" style="left:20%; animation-duration:8s;">🌸</div>
+        <div class="petal" style="left:50%; animation-duration:11s;">🌸</div>
+        <div class="petal" style="left:80%; animation-duration:13s;">🌸</div>
+    </div>
+
+    <div style="position:absolute; top:20%; width:100%; text-align:center; font-size:36px;">
+    </div>
+
+    <div style="
+        position:absolute;
+        top:35%;
+        width:60%;
+        left:20%;
+        font-size:22px;
+        line-height:1.8;
+    ">
+        果郡王誤傳死訊後，
+        甄嬛為保護腹中之子與父親，決意重返宮中。<br>
+        此後，她不再執著於情愛，
+        反而利用「替身」之名， 一步步剷除敵人，最終登上太后之位。
+    </div>
+
+    <div style="position:absolute; bottom:10%; width:100%; text-align:center;">
+        <button onclick="SugarCube.Engine.play('scene3')">進入正篇</button>
+    </div>
+
+</div>
+
+
+:: scene3 {"position":"575,100","size":"100,100"}
+
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; color:white; font-family: serif;">
+
+    <!-- 背景 -->
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg" style="
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position:absolute;
+        top:0;
+        left:0;
+    ">
+
+    <!-- 深色遮罩 -->
+    <div style="
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.48);
+    "></div>
+
+    <!-- 標題 -->
+    <div style="
+        position:absolute;
+        top:18%;
+        width:100%;
+        text-align:center;
+        font-size:52px;
+        font-weight:bold;
+        letter-spacing:8px;
+        text-shadow:0 0 12px black, 0 0 24px black;
+    ">
+        菀菀類卿
+    </div>
+
+    <!-- 副標 / 開場敘述框 -->
+    <div style="
+        position:absolute;
+        top:36%;
+        left:50%;
+        transform:translateX(-50%);
+        width:62%;
+        padding:28px 36px;
+        background:rgba(0,0,0,0.28);
+        border:1px solid rgba(255,255,255,0.22);
+        border-radius:14px;
+        text-align:center;
+        font-size:24px;
+        line-height:1.9;
+        text-shadow:0 0 6px black;
+        box-shadow:0 0 20px rgba(0,0,0,0.25);
+    ">
+        雍正注意到甄嬛神似已故純元皇后，
+        因此她才能通過選秀，得以入宮。<br>
+        宮廷氣息安靜微妙。
+    </div>
+
+    <!-- 下一步 -->
+    <div style="
+        position:absolute;
+        bottom:12%;
+        width:100%;
+        text-align:center;
+    ">
+        <button onclick="SugarCube.Engine.play('scene3_1')" style="
+            padding:12px 28px;
+            background:rgba(255,255,255,0.14);
+            border:1px solid rgba(255,255,255,0.35);
+            border-radius:10px;
+            color:white;
+            font-size:26px;
+            cursor:pointer;
+            text-shadow:0 0 6px black;
+            box-shadow:0 0 10px rgba(0,0,0,0.18);
+        ">
+            進入第一段對話
+        </button>
+    </div>
+
+</div>
+
+
+:: scene3_1 {"position":"75,225","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <!-- 背景 -->
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <!-- 標題 -->
+    <div class="scene-title">菀菀類卿</div>
+
+    <!-- 人物 -->
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+    <!-- 對話框 -->
+    <div class="dialogue-box">
+        <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+            （恭敬地行禮）「啓稟皇上，臣妾本名甄玉嬛，乃漢軍旗甄遠道與彭辛蘿之女。」
+        </div>
+    </div>
+
+    <!-- 下一句 -->
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene3_2')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene3_2 {"position":"200,225","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">菀菀類卿</div>
+
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+ 
+    <div class="dialogue-box">
+       <div class="nameplate">雍正</div>
+
+        <div class="dialogue-text">
+            （走近，眉頭微皺，看著甄嬛的容貌低聲）「這女子……容貌與純元皇后相似，舉止也不俗，倒是讓朕有些驚訝。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene3_3')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene3_3 {"position":"325,225","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">菀菀類卿</div>
+
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+  
+
+    <div class="dialogue-box">
+      <div class="nameplate">甄嬛</div>
+        <div class="dialogue-text">
+            「臣妾甄嬛，初入宮中，願恪守宮規，勤於事奉，望皇上垂憐。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene3_4')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene3_4 {"position":"450,225","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">菀菀類卿</div>
+
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+   
+
+    <div class="dialogue-box">
+     <div class="nameplate">雍正</div>
+        <div class="dialogue-text">
+            （停頓，手輕輕撫額，思索說道）「今日是否要召她到內殿一見呢？」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene3_5')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene3_5 {"position":"575,225","size":"100,100"}
+<<run setup.playBGM()>>
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">菀菀類卿</div>
+
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+  
+
+    <div class="dialogue-box">
+      <div class="nameplate">甄嬛</div>
+        <div class="dialogue-text">
+            「臣妾不敢冒犯皇上，只願盡心守分，若有過失，願受皇上懲處。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene3_choice')">進入抉擇</button>
+    </div>
+
+</div>
+
+
+:: scene3_5.5 {"position":"375,350","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">抉擇點</div>
+
+    <!-- 人物 -->
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+    <!-- 對話框 -->
+    <div class="dialogue-box">
+
+        <div class="nameplate">雍正</div>
+
+        <div class="dialogue-text">
+            （微微嘆氣）「宮中太監都說她舉止端莊，但這女子心性如何，朕暫時還不能斷定。」
+        </div>
+        <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene3_6')">進入抉擇</button>
+    </div>
+
+</div>
+
+
+:: scene3_6 {"position":"75,475","size":"100,100"}
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">請做出選擇</div>
+
+    <!-- 人物 -->
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+   
+    </div>
+
+    <!-- 選項 -->
+    <div class="choice-wrap">
+
+       
+
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene3_A2')">
+          <div class="nameplate">雍正</div>
+            A：給予更多關注（甄嬛獲得更多寵愛與賞賜）
+        </button>
+
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene3_B2')">
+          <div class="nameplate">雍正</div>
+            B：保持觀察（甄嬛低調自守，皇上繼續觀察）
+        </button>
+
+    </div>
+
+</div>
+
+
+:: scene3_7 {"position":"500,475","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">菀菀類卿</div>
+
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="nameplate">雍正</div>
+
+        <div class="dialogue-text">
+            （微微沉吟）「她的到來……果真讓人想起純元，卻又不同。朕該如何對她，還尚需時間觀察啊。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4')">進入下一章</button>
+    </div>
+
+</div>
+
+
+:: scene3_A {"position":"200,350","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">選擇結果</div>
+
+    <div class="dialogue-box" style="top:38%; bottom:auto;">
+        <div class="dialogue-text" style="text-align:center;">
+            雍正最終決定親自召見甄嬛。<br>
+            她初步得到了皇上的注意與寵愛，命運的齒輪也自此開始轉動。
+        </div>
+         <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene3_5.5')">下一幕</button>
+    </div>
+
+</div>
+
+
+:: scene3_A2 {"position":"225,475","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">選擇結果</div>
+
+    <div class="dialogue-box" style="top:48%;">
+
+        <div class="dialogue-text" style="text-align:center;">
+            旁白：雍正決定給予甄嬛更多關注。<br>
+            她逐漸獲得寵愛與賞賜，在後宮中的地位悄然提升。
+        </div>
+
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene3_7')">下一幕</button>
+    </div>
+
+</div>
+
+
+:: scene3_B {"position":"250,350","size":"100,100"}
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">選擇結果</div>
+
+    <div class="dialogue-box" style="top:38%; bottom:auto;">
+        <div class="dialogue-text" style="text-align:center;">
+            雍正選擇暫時觀察甄嬛。<br>
+            她並未立刻得到特別關注，只能在深宮中小心行走，靜待時機。
+        </div>
+         <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene3_5.5')">下一幕</button>
+    </div>
+
+</div>
+
+
+:: scene3_B2 {"position":"350,475","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">選擇結果</div>
+
+    <div class="dialogue-box" style="top:48%;">
+
+        <div class="dialogue-text" style="text-align:center;">
+            旁白：雍正選擇繼續觀察甄嬛。<br>
+            她在宮中低調自守，暫未引起過多關注。
+        </div>
+
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene3_7')">下一幕</button>
+    </div>
+
+</div>
+
+
+:: scene3_choice {"position":"75,350","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">請扮演雍正做出選擇</div>
+
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+    <div class="choice-wrap">
+        
+
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene3_A')">
+        <div class="nameplate">雍正</div>
+            A：親自召見甄嬛（初步得到皇上注意與寵愛）
+        </button>
+
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene3_B')">
+        <div class="nameplate">雍正</div>
+            B：暫時觀察（甄嬛未獲特別關注）
+        </button>
+    </div>
+
+</div>
+
+
+:: scene4 {"position":"75,600","size":"100,100"}
+
+
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; color:white; font-family: serif;">
+
+    <!-- 背景 -->
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3726.jpeg" style="
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position:absolute;
+        top:0;
+        left:0;
+    ">
+
+    <!-- 深色遮罩（稍微強一點營造氣氛轉變） -->
+    <div style="
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.55);
+    "></div>
+
+    <!-- 標題 -->
+    <div style="
+        position:absolute;
+        top:22%;
+        width:100%;
+        text-align:center;
+        font-size:48px;
+        letter-spacing:6px;
+        text-shadow:0 0 12px black, 0 0 24px black;
+    ">
+        誤穿舊衣
+    </div>
+
+    <!-- 內容 -->
+    <div style="
+        position:absolute;
+        top:42%;
+        left:50%;
+        transform:translateX(-50%);
+        width:60%;
+        padding:24px 30px;
+        text-align:center;
+        font-size:24px;
+        line-height:1.9;
+        background:rgba(0,0,0,0.35);
+        border:1px solid rgba(255,255,255,0.2);
+        border-radius:14px;
+        text-shadow:0 0 6px black;
+    ">
+        甄嬛盛裝出席， 雍正一眼看見她，
+        氣氛，瞬間轉變。
+    </div>
+<div class="petals">
+        <div class="petal" style="left:10%; animation-duration:8s;">🌸</div>
+        <div class="petal" style="left:25%; animation-duration:11s;">🌸</div>
+        <div class="petal" style="left:40%; animation-duration:9s;">🌸</div>
+        <div class="petal" style="left:60%; animation-duration:12s;">🌸</div>
+        <div class="petal" style="left:75%; animation-duration:10s;">🌸</div>
+        <div class="petal" style="left:90%; animation-duration:13s;">🌸</div>
+    </div>
+    <!-- 下一步 -->
+    <div style="
+        position:absolute;
+        bottom:12%;
+        width:100%;
+        text-align:center;
+    ">
+        <button onclick="SugarCube.Engine.play('scene4_1')" style="
+            padding:12px 28px;
+            background:rgba(255,255,255,0.15);
+            border:1px solid rgba(255,255,255,0.3);
+            border-radius:10px;
+            color:white;
+            font-size:26px;
+            cursor:pointer;
+            text-shadow:0 0 6px black;
+        ">
+            繼續
+        </button>
+    </div>
+
+</div>
+
+
+:: scene4_1 {"position":"225,600","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <!-- 背景 -->
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3731.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.6);"></div>
+
+    <div class="scene-title">誤穿舊衣</div>
+
+    <!-- 人物 -->
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+    <!-- 對話框 -->
+    <div class="dialogue-box">
+
+        <div class="nameplate">雍正</div>
+
+        <div class="dialogue-text">
+            「……今日這身衣裳，是誰給你的？」
+        </div>
+
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_2')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene4_10 {"position":"325,850","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3731.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.7);"></div>
+
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="nameplate">雍正</div>
+
+        <div class="dialogue-text">
+            （背對她）「你先退下。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_11')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene4_11 {"position":"475,850","size":"100,100"}
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3729.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.65);"></div>
+
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+            「臣妾告退。」
+
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_12')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene4_12 {"position":"625,850","size":"100,100"}
+
+
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; color:white; font-family: serif;">
+
+    <!-- 背景 -->
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3729.jpeg" style="
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position:absolute;
+        top:0;
+        left:0;
+    ">
+
+    <!-- 深色遮罩（稍微強一點營造氣氛轉變） -->
+    <div style="
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.55);
+    "></div>
+
+  <div class="characters">
+        <img class="char left " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+ 
+    </div>
+
+    <!-- 內容 -->
+    <div style="
+        position:absolute;
+        top:42%;
+        left:50%;
+        transform:translateX(-50%);
+        width:60%;
+        padding:24px 30px;
+        text-align:center;
+        font-size:24px;
+        line-height:1.9;
+        background:rgba(0,0,0,0.35);
+        border:1px solid rgba(255,255,255,0.2);
+        border-radius:14px;
+        text-shadow:0 0 6px black;
+    ">
+        「此後，甄嬛漸失聖心。產下朧月公主後，最終離宮，前往甘露寺修行。」
+    </div>
+
+    <!-- 下一步 -->
+    <div style="
+        position:absolute;
+        bottom:12%;
+        width:100%;
+        text-align:center;
+    ">
+        <button onclick="SugarCube.Engine.play('scene5')" style="
+            padding:12px 28px;
+            background:rgba(255,255,255,0.15);
+            border:1px solid rgba(255,255,255,0.3);
+            border-radius:10px;
+            color:white;
+            font-size:26px;
+            cursor:pointer;
+            text-shadow:0 0 6px black;
+        ">
+            下一幕
+        </button>
+    </div>
+
+</div>
+
+
+:: scene4_2 {"position":"350,600","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3731.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.6);"></div>
+
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+            「是內務府新送來的，臣妾見樣式端莊，便穿來見皇上。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_3')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene4_3 {"position":"475,600","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3731.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.65);"></div>
+
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="nameplate">雍正</div>
+
+        <div class="dialogue-text">
+            （語氣變冷）「端莊？」<br>
+            「你可知，這衣裳是誰的？」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_4')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene4_4 {"position":"600,600","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3731.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+            （微微一愣）「臣妾……不知。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_5')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene4_5 {"position":"75,725","size":"100,100"}
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3731.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.7);"></div>
+
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="nameplate">雍正</div>
+
+        <div class="dialogue-text">
+            「大膽！那是純元皇后的衣裳。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_6')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene4_6 {"position":"225,725","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3731.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.7);"></div>
+
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="nameplate">雍正</div>
+
+        <div class="dialogue-text">
+            （盯著她）「你是不知，還是……太知道？」
+        </div>
+    </div>
+<div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_7')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene4_7 {"position":"350,725","size":"100,100"}
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3731.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.7);"></div>
+
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+    <!-- 互動 -->
+    <div class="choice-wrap">
+
+        <div class="choice-title">請扮演雍正做出選擇</div>
+
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_8')">
+          <div class="nameplate">雍正</div>
+            A：相信她（起來吧，此事作罷）
+        </button>
+
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_8')">
+          <div class="nameplate">雍正</div>
+            B：不信（皇上怒道：退下！）
+        </button>
+
+    </div>
+
+</div>
+
+
+:: scene4_8 {"position":"475,725","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3731.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.65);"></div>
+
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+            「臣妾不敢欺瞞皇上。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_9')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene4_9 {"position":"625,725","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3746.jpeg">">
+
+    <div class="scene-overlay"></div>
+
+    
+
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+    <div class="choice-wrap">
+        <div class="choice-title">請做出選擇</div>
+
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_9a')">
+        <div class="nameplate">雍正</div>
+            A：放過她
+        </button>
+
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_9b')">
+        <div class="nameplate">雍正</div>
+            B：直接冷落 
+        </button>
+    </div>
+
+</div>
+
+
+:: scene4_9a {"position":"75,850","size":"100,100"}
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3725.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">選擇結果</div>
+
+    <div class="dialogue-box" style="top:38%; bottom:auto;">
+        <div class="dialogue-text" style="text-align:center;">
+           雍正沉默片刻，最終還是壓下怒意。<br>
+                    「起來吧，此事作罷。」<br>
+                    然而自此之後，他與甄嬛之間仍漸行漸遠。
+        </div>
+       
+         <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_10')">下一幕</button>
+    </div>
+ <div class="characters">
+        <img class="char left " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+</div>
+
+
+:: scene4_9b {"position":"200,850","size":"100,100"}
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3749.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">選擇結果</div>
+
+    <div class="dialogue-box" style="top:38%; bottom:auto;">
+        <div class="dialogue-text" style="text-align:center;">
+       雍正目光冰冷，語氣愈發疏離。<br>
+                    「退下。」<br>
+                    自此之後，他對甄嬛愈加冷淡，兩人關係也逐漸疏遠。
+        </div>
+            <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene4_10')">下一幕</button>
+    </div>
+ <div class="characters">
+        <img class="char left " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+    </div>
+</div>
+
+
+:: scene5 {"position":"75,1000","size":"100,100"}
+
+
+
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; color:white; font-family: serif;">
+
+    <!-- 背景 -->
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg" style="
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position:absolute;
+        top:0;
+        left:0;
+    ">
+
+    <!-- 深色遮罩（稍微強一點營造氣氛轉變） -->
+    <div style="
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.55);
+    "></div>
+
+    <!-- 標題 -->
+    <div style="
+        position:absolute;
+        top:22%;
+        width:100%;
+        text-align:center;
+        font-size:48px;
+        letter-spacing:6px;
+        text-shadow:0 0 12px black, 0 0 24px black;
+    ">
+        情愫
+    </div>
+
+    <!-- 內容 -->
+    <div style="
+        position:absolute;
+        top:42%;
+        left:50%;
+        transform:translateX(-50%);
+        width:60%;
+        padding:24px 30px;
+        text-align:center;
+        font-size:24px;
+        line-height:1.9;
+        background:rgba(0,0,0,0.35);
+        border:1px solid rgba(255,255,255,0.2);
+        border-radius:14px;
+        text-shadow:0 0 6px black;
+    ">
+       甄嬛高燒不退，果郡王（允禮）守在旁邊以身體為其降溫。
+
+    </div>
+
+    <!-- 下一步 -->
+    <div style="
+        position:absolute;
+        bottom:12%;
+        width:100%;
+        text-align:center;
+    ">
+        <button onclick="SugarCube.Engine.play('scene5_1')" style="
+            padding:12px 28px;
+            background:rgba(255,255,255,0.15);
+            border:1px solid rgba(255,255,255,0.3);
+            border-radius:10px;
+            color:white;
+            font-size:26px;
+            cursor:pointer;
+            text-shadow:0 0 6px black;
+        ">
+            開始
+        </button>
+    </div>
+
+</div>
+
+
+:: scene5_1 {"position":"225,1000","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <!-- 背景 -->
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.6);"></div>
+
+
+
+    <!-- 人物 -->
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <!-- 對話框 -->
+    <div class="dialogue-box">
+
+        <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+            （虛弱，呼吸急促）「好冷……這裡怎麼這麼冷……」
+
+        </div>
+
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_2')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene5_10 {"position":"350,1250","size":"100,100"}
+
+
+    <!-- 背景 -->
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.6);"></div>
+
+ 
+
+    <!-- 人物 -->
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <!-- 對話框 -->
+    <div class="dialogue-box">
+
+        <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+     「允禮……你不該為我做到這樣；你頻繁出現在這，你會有麻煩的。」
+
+        </div>
+
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_11')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene5_11 {"position":"500,1250","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.6);"></div>
+
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="nameplate">果郡王</div>
+
+        <div class="dialogue-text">
+            「現在連命都顧不上，還想那些？」
+
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_12')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene5_12 {"position":"650,1250","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <!-- 背景 -->
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <!-- 標題 -->
+    <div class="scene-title">請做出選擇</div>
+
+    <!-- 人物（甄嬛主導 → 左亮） -->
+    <div class="characters">
+        <img class="char left " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <!-- 心境提示 -->
+    <div class="dialogue-box">
+        <div class="nameplate">甄嬛</div>
+        <div class="dialogue-text">
+            （心中微亂）「此刻……我是否該放任自己片刻？」
+        </div>
+    </div>
+
+    <!-- 選項 -->
+    <div class="choice-wrap">
+
+      
+
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene_guojun2_A')">
+            A：放鬆依靠（與果郡王情感更靠近）
+        </button>
+
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene_guojun2_B')">
+            B：收回距離（維持界線）
+        </button>
+
+    </div>
+
+</div>
+
+
+:: scene5_13 {"position":"450,1375","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3725.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.6);"></div>
+
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="nameplate">果郡王</div>
+
+        <div class="dialogue-text">
+         「等你好了，再說這些。」
+
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_14')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene5_14 {"position":"575,1375","size":"100,100"}
+<div class="scene-bg">
+
+    <!-- 背景 -->
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3725.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.6);"></div>
+
+ 
+
+    <!-- 人物 -->
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <!-- 對話框 -->
+    <div class="dialogue-box">
+
+        <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+   甄嬛：（微弱）「允禮。」
+
+        </div>
+
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_15')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene5_15 {"position":"75,1500","size":"100,100"}
+
+
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; color:white; font-family: serif;">
+
+    <!-- 背景 -->
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3725.jpeg" style="
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position:absolute;
+        top:0;
+        left:0;
+    ">
+
+    <!-- 深色遮罩（稍微強一點營造氣氛轉變） -->
+    <div style="
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.55);
+    "></div>
+
+    <!-- 標題 -->
+    <div style="
+        position:absolute;
+        top:22%;
+        width:100%;
+        text-align:center;
+        font-size:48px;
+        letter-spacing:6px;
+        text-shadow:0 0 12px black, 0 0 24px black;
+    ">
+     
+    </div>
+
+    <!-- 內容 -->
+    <div style="
+        position:absolute;
+        top:42%;
+        left:50%;
+        transform:translateX(-50%);
+        width:60%;
+        padding:24px 30px;
+        text-align:center;
+        font-size:24px;
+        line-height:1.9;
+        background:rgba(0,0,0,0.35);
+        border:1px solid rgba(255,255,255,0.2);
+        border-radius:14px;
+        text-shadow:0 0 6px black;
+    ">
+  「雪夜之中，兩人之間的距離悄然改變。」
+
+    </div>
+    <div class="petals">
+        <div class="petal" style="left:10%; animation-duration:8s;">🌸</div>
+        <div class="petal" style="left:25%; animation-duration:11s;">🌸</div>
+        <div class="petal" style="left:40%; animation-duration:9s;">🌸</div>
+        <div class="petal" style="left:60%; animation-duration:12s;">🌸</div>
+        <div class="petal" style="left:75%; animation-duration:10s;">🌸</div>
+        <div class="petal" style="left:90%; animation-duration:13s;">🌸</div>
+    </div>
+   <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+    <!-- 下一步 -->
+    <div style="
+        position:absolute;
+        bottom:12%;
+        width:100%;
+        text-align:center;
+    ">
+        <button onclick="SugarCube.Engine.play('scene6')" style="
+            padding:12px 28px;
+            background:rgba(255,255,255,0.15);
+            border:1px solid rgba(255,255,255,0.3);
+            border-radius:10px;
+            color:white;
+            font-size:26px;
+            cursor:pointer;
+            text-shadow:0 0 6px black;
+        ">
+            下一幕
+        </button>
+    </div>
+
+</div>
+
+
+:: scene5_2 {"position":"350,1000","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.6);"></div>
+
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="nameplate">果郡王</div>
+
+        <div class="dialogue-text">
+            （擔憂）「還在發燒……怎麼會這樣，明明已經吃過藥了啊。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_3')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene5_3 {"position":"500,1000","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <!-- 背景 -->
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.6);"></div>
+
+ 
+
+    <!-- 人物 -->
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <!-- 對話框 -->
+    <div class="dialogue-box">
+
+        <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+            「不用管我……我自己撐得住……」
+
+        </div>
+
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_4')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene5_4 {"position":"650,1000","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.6);"></div>
+
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="nameplate">果郡王</div>
+
+        <div class="dialogue-text">
+            「撐得住？你現在連站都站不穩，還說撐得住。這裡太冷了，不能再這樣下去。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_5')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene5_5 {"position":"75,1125","size":"100,100"}
+
+<div class="scene-bg">
+
+    <!-- 背景 -->
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.6);"></div>
+
+ 
+
+    <!-- 人物 -->
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <!-- 對話框 -->
+    <div class="dialogue-box">
+
+        <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+            「不用管我……我自己撐得住……」
+
+        </div>
+
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_6')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene5_6 {"position":"225,1125","size":"100,100"}
+
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; color:white; font-family: serif;">
+
+    <!-- 背景 -->
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg" style="
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position:absolute;
+        top:0;
+        left:0;
+    ">
+
+    <!-- 深色遮罩（稍微強一點營造氣氛轉變） -->
+    <div style="
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.55);
+    "></div>
+
+    <!-- 標題 -->
+    <div style="
+        position:absolute;
+        top:22%;
+        width:100%;
+        text-align:center;
+        font-size:48px;
+        letter-spacing:6px;
+        text-shadow:0 0 12px black, 0 0 24px black;
+    ">
+     
+    </div>
+
+    <!-- 內容 -->
+    <div style="
+        position:absolute;
+        top:42%;
+        left:50%;
+        transform:translateX(-50%);
+        width:60%;
+        padding:24px 30px;
+        text-align:center;
+        font-size:24px;
+        line-height:1.9;
+        background:rgba(0,0,0,0.35);
+        border:1px solid rgba(255,255,255,0.2);
+        border-radius:14px;
+        text-shadow:0 0 6px black;
+    ">
+       允禮出門外脫下外衣，在雪地上打滾，默默回到甄嬛身旁擁抱住她，想幫助甄嬛降溫
+
+    </div>
+
+    <!-- 下一步 -->
+    <div style="
+        position:absolute;
+        bottom:12%;
+        width:100%;
+        text-align:center;
+    ">
+        <button onclick="SugarCube.Engine.play('scene5_7')" style="
+            padding:12px 28px;
+            background:rgba(255,255,255,0.15);
+            border:1px solid rgba(255,255,255,0.3);
+            border-radius:10px;
+            color:white;
+            font-size:26px;
+            cursor:pointer;
+            text-shadow:0 0 6px black;
+        ">
+            繼續
+        </button>
+    </div>
+
+</div>
+
+
+:: scene5_7 {"position":"350,1125","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <!-- 背景 -->
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.6);"></div>
+
+ 
+
+    <!-- 人物 -->
+    <div class="characters">
+        <img class="char left" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <!-- 對話框 -->
+    <div class="dialogue-box">
+
+        <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+            甄嬛：「你在做什麼……這樣會受寒…不行……這樣不合規矩……」
+
+        </div>
+
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_8')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene5_8 {"position":"500,1125","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg">
+
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.6);"></div>
+
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="nameplate">果郡王</div>
+
+        <div class="dialogue-text">
+       果郡王：「命重要，還是規矩重要？」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_9')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene5_9 {"position":"650,1125","size":"100,100"}
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">做出選擇</div>
+
+    <div class="characters">
+        <img class="char left  " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <div class="choice-wrap">
+        <div class="choice-title">請扮演甄嬛做出選擇</div>
+
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_9a')">
+            A：繼續接受果郡王的擁抱（與果郡王關係變得曖昧）
+        </button>
+
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_9b')">
+            B：保持距離（顧及分寸，不失倫理）
+        </button>
+    </div>
+
+</div>
+
+
+:: scene5_9a {"position":"75,1250","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3725.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">選擇結果</div>
+
+    <div class="dialogue-box" style="top:44%;">
+        <div class="dialogue-text" style="text-align:center;">
+            旁白：甄嬛沒有推開果郡王。<br>
+            那一刻，兩人之間的情意悄然越過了界線，<br>
+            關係也逐漸變得曖昧起來。
+        </div>
+    </div>
+   <!-- 人物 -->
+    <div class="characters">
+        <img class="char left " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_10')">繼續</button>
+    </div>
+
+</div>
+
+
+:: scene5_9b {"position":"225,1250","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">選擇結果</div>
+
+    <div class="dialogue-box" style="top:44%;">
+        <div class="dialogue-text" style="text-align:center;">
+            旁白：甄嬛輕輕退開一步，仍守住彼此之間的分寸。<br>
+            雖然心中波瀾未平，卻也未讓情感越過倫理的界線。
+        </div>
+    </div>
+   <!-- 人物 -->
+    <div class="characters">
+        <img class="char left " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_10')">繼續</button>
+    </div>
+
+</div>
+
+
+:: scene6 {"position":"50,1625","size":"100,100"}
+
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; color:white; font-family: serif;">
+
+    <!-- 背景 -->
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3744.jpeg" style="
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position:absolute;
+        top:0;
+        left:0;
+    ">
+
+    <!-- 深色遮罩（稍微強一點營造氣氛轉變） -->
+    <div style="
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.55);
+    "></div>
+
+    <!-- 標題 -->
+    <div style="
+        position:absolute;
+        top:22%;
+        width:100%;
+        text-align:center;
+        font-size:48px;
+        letter-spacing:6px;
+        text-shadow:0 0 12px black, 0 0 24px black;
+    ">
+        熹妃回宮
+    </div>
+
+    <!-- 內容 -->
+    <div style="
+        position:absolute;
+        top:42%;
+        left:50%;
+        transform:translateX(-50%);
+        width:60%;
+        padding:24px 30px;
+        text-align:center;
+        font-size:24px;
+        line-height:1.9;
+        background:rgba(0,0,0,0.35);
+        border:1px solid rgba(255,255,255,0.2);
+        border-radius:14px;
+        text-shadow:0 0 6px black;
+    ">
+       甄嬛為保護腹中果親王的孩子和病重的父親，設計冒險重回宮中。
+
+    </div>
+
+    <!-- 下一步 -->
+    <div style="
+        position:absolute;
+        bottom:12%;
+        width:100%;
+        text-align:center;
+    ">
+        <button onclick="SugarCube.Engine.play('scene6_1')" style="
+            padding:12px 28px;
+            background:rgba(255,255,255,0.15);
+            border:1px solid rgba(255,255,255,0.3);
+            border-radius:10px;
+            color:white;
+            font-size:26px;
+            cursor:pointer;
+            text-shadow:0 0 6px black;
+        ">
+            開始
+        </button>
+    </div>
+
+</div>
+
+
+:: scene6_1 {"position":"200,1625","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <!-- 背景 -->
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3727.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <!-- 標題 -->
+    <div class="scene-title">菀菀類卿</div>
+
+    <!-- 人物 -->
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <!-- 對話框 -->
+    <div class="dialogue-box">
+        <div class="nameplate">     雍正</div>
+
+        <div class="dialogue-text">
+     「你還願意回來？」
+
+        </div>
+    </div>
+
+    <!-- 下一句 -->
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene6_2')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene6_10 {"position":"275,1900","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3727.jpeg">
+
+    <div class="scene-overlay"></div>
+
+  <!-- 人物 -->
+    <div class="characters">
+        <img class="char left " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+ 
+    <div class="dialogue-box">
+       <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+      「為了活，也為了該活的人。臣妾會做該做的事。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene6_11')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene6_11 {"position":"400,1900","size":"100,100"}
+
+
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; color:white; font-family: serif;">
+
+    <!-- 背景 -->
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3744.jpeg" style="
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position:absolute;
+        top:0;
+        left:0;
+    ">
+
+    <!-- 深色遮罩（稍微強一點營造氣氛轉變） -->
+    <div style="
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.55);
+    "></div>
+
+    <!-- 標題 -->
+    <div style="
+        position:absolute;
+        top:22%;
+        width:100%;
+        text-align:center;
+        font-size:48px;
+        letter-spacing:6px;
+        text-shadow:0 0 12px black, 0 0 24px black;
+    ">
+    </div>
+
+    <!-- 內容 -->
+    <div style="
+        position:absolute;
+        top:42%;
+        left:50%;
+        transform:translateX(-50%);
+        width:60%;
+        padding:24px 30px;
+        text-align:center;
+        font-size:24px;
+        line-height:1.9;
+        background:rgba(0,0,0,0.35);
+        border:1px solid rgba(255,255,255,0.2);
+        border-radius:14px;
+        text-shadow:0 0 6px black;
+    ">
+     「甄嬛回宮後，不再執著於君心，利用自己的優勢一步步掌控局勢，最終邁向太后之位。」
+
+
+    </div>
+ <div class="characters">
+        <img class="char left " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+        <img class="char right " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+    <!-- 下一步 -->
+    <div style="
+        position:absolute;
+        bottom:12%;
+        width:100%;
+        text-align:center;
+    ">
+        <button onclick="SugarCube.Engine.play('scene6_12')" style="
+            padding:12px 28px;
+            background:rgba(255,255,255,0.15);
+            border:1px solid rgba(255,255,255,0.3);
+            border-radius:10px;
+            color:white;
+            font-size:26px;
+            cursor:pointer;
+            text-shadow:0 0 6px black;
+        ">
+            繼續
+        </button>
+    </div>
+
+</div
+
+
+:: scene6_12 {"position":"525,1900","size":"100,100"}
+<<run setup.playBGM("https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/8c471135929b1798ff515364654f5788_audio.mp3.mp3")>>
+
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; color:white; font-family: serif;">
+
+    <!-- 背景 -->
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3751.jpeg" style="
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position:absolute;
+        top:0;
+        left:0;
+    ">
+
+ 
+    
+
+    <!-- 下一步 -->
+    <div style="
+        position:absolute;
+        bottom:12%;
+        width:100%;
+        text-align:center;
+    ">
+        <button onclick="SugarCube.Engine.play('scene6_13')" style="
+            padding:12px 28px;
+            background:rgba(255,255,255,0.15);
+            border:1px solid rgba(255,255,255,0.3);
+            border-radius:10px;
+            color:white;
+            font-size:26px;
+            cursor:pointer;
+            text-shadow:0 0 6px black;
+        ">
+            下一幕
+        </button>
+    </div>
+
+</div>
+
+
+:: scene6_13 {"position":"650,1900","size":"100,100"}
+
+
+<div style="position: relative; width: 100%; height: 100vh; overflow:hidden; color:white; font-family: serif;">
+
+    <!-- 背景 -->
+    <img src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3728.jpeg" style="
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        position:absolute;
+        top:0;
+        left:0;
+    ">
+
+    <!-- 深色遮罩（稍微強一點營造氣氛轉變） -->
+    <div style="
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.55);
+    "></div>
+
+    <!-- 標題 -->
+    <div style="
+        position:absolute;
+        top:22%;
+        width:100%;
+        text-align:center;
+        font-size:48px;
+        letter-spacing:6px;
+        text-shadow:0 0 12px black, 0 0 24px black;
+    ">
+    未完待續
+    </div>
+
+    <!-- 內容 -->
+    <div style="
+        position:absolute;
+        top:42%;
+        left:50%;
+        transform:translateX(-50%);
+        width:60%;
+        padding:24px 30px;
+        text-align:center;
+        font-size:24px;
+        line-height:1.9;
+        background:rgba(0,0,0,0.35);
+        border:1px solid rgba(255,255,255,0.2);
+        border-radius:14px;
+        text-shadow:0 0 6px black;
+    ">
+     想知後續如何，且待下回分曉。
+
+
+ 
+    </div>
+    <!-- 下一步 -->
+    <div style="
+        position:absolute;
+        bottom:12%;
+        width:100%;
+        text-align:center;
+    ">
+        <button onclick="SugarCube.Engine.play('scene1')" style="
+            padding:12px 28px;
+            background:rgba(255,255,255,0.15);
+            border:1px solid rgba(255,255,255,0.3);
+            border-radius:10px;
+            color:white;
+            font-size:26px;
+            cursor:pointer;
+            text-shadow:0 0 6px black;
+        ">
+            再來一次遊戲
+        </button>
+    </div>
+
+</div
+
+
+:: scene6_2 {"position":"325,1625","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3727.jpeg">
+
+    <div class="scene-overlay"></div>
+
+  <!-- 人物 -->
+    <div class="characters">
+        <img class="char left " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+ 
+    <div class="dialogue-box">
+       <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+      「臣妾有不得不回的理由。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene6_3')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene6_3 {"position":"475,1625","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <!-- 背景 -->
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3727.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <!-- 標題 -->
+    <div class="scene-title">菀菀類卿</div>
+
+    <!-- 人物 -->
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <!-- 對話框 -->
+    <div class="dialogue-box">
+        <div class="nameplate">     雍正</div>
+
+        <div class="dialogue-text">
+     （懷疑）「理由？」 
+
+        </div>
+    </div>
+
+    <!-- 下一句 -->
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene6_4')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene6_4 {"position":"600,1625","size":"100,100"}
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3727.jpeg">
+
+    <div class="scene-overlay"></div>
+
+  <!-- 人物 -->
+    <div class="characters">
+        <img class="char left " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+ 
+    <div class="dialogue-box">
+       <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+      「人活著，總要守住一些東西。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene6_5')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene6_5 {"position":"75,1750","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <!-- 背景 -->
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3727.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <!-- 標題 -->
+    <div class="scene-title">菀菀類卿</div>
+
+    <!-- 人物 -->
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <!-- 對話框 -->
+    <div class="dialogue-box">
+        <div class="nameplate">     雍正</div>
+
+        <div class="dialogue-text">
+     「當年的事，你還記得？」 
+
+        </div>
+    </div>
+
+    <!-- 下一句 -->
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene6_6')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene6_6 {"position":"200,1750","size":"100,100"}
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3727.jpeg">
+
+    <div class="scene-overlay"></div>
+
+  <!-- 人物 -->
+    <div class="characters">
+        <img class="char left " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+ 
+    <div class="dialogue-box">
+       <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+      「記得。但臣妾還是回來了。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene6_7')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene6_7 {"position":"325,1750","size":"100,100"}
+
+    <!-- 背景 -->
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3727.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <!-- 標題 -->
+    <div class="scene-title">菀菀類卿</div>
+
+    <!-- 人物 -->
+    <div class="characters">
+        <img class="char left active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+        <img class="char right" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <!-- 對話框 -->
+    <div class="dialogue-box">
+        <div class="nameplate">     雍正</div>
+
+        <div class="dialogue-text">
+     「你不恨朕？」
+
+        </div>
+    </div>
+
+    <!-- 下一句 -->
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene6_8')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene6_8 {"position":"450,1750","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3727.jpeg">
+
+    <div class="scene-overlay"></div>
+
+  <!-- 人物 -->
+    <div class="characters">
+        <img class="char left " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+ 
+    <div class="dialogue-box">
+       <div class="nameplate">甄嬛</div>
+
+        <div class="dialogue-text">
+      「恨過。但現在不重要了。」
+        </div>
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene6_9')">下一句</button>
+    </div>
+
+</div>
+
+
+:: scene6_9 {"position":"575,1750","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <!-- 背景 -->
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3727.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <!-- 標題 -->
+    <div class="scene-title">請做出選擇</div>
+
+    <!-- 人物（甄嬛主導） -->
+    <div class="characters">
+        <img class="char left " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3737.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+
+    <!-- 心境 -->
+    <div class="dialogue-box">
+        <div class="nameplate">甄嬛</div>
+        <div class="dialogue-text">
+            （心中掙扎）「這一切……我是否還能再信他一次？」
+        </div>
+    </div>
+
+    <!-- 選項 -->
+    <div class="choice-wrap">
+
+     
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene_reconcile_A')">
+            A：原諒皇上（兩人暫時關係緩和）
+        </button>
+
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene_reconcile_B')">
+            B：不原諒（距離仍有隔閡）
+        </button>
+
+    </div>
+
+</div>
+
+
+:: scene_guojun2_A {"position":"200,1375","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3725.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">選擇結果</div>
+
+    <div class="dialogue-box" style="top:44%;">
+
+        <div class="dialogue-text" style="text-align:center;">
+            甄嬛沒有退開。<br>
+            她在這一刻，短暫地放下了所有束縛。<br><br>
+            果郡王的溫度，讓兩人的距離悄然拉近。
+        </div>
+
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_13')">繼續</button>
+    </div>
+  <div class="characters">
+        <img class="char left  active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right active" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+</div>
+
+
+:: scene_guojun2_B {"position":"325,1375","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3745.jpeg">
+
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">選擇結果</div>
+
+    <div class="dialogue-box" style="top:44%;">
+
+        <div class="dialogue-text" style="text-align:center;">
+            甄嬛輕輕退開一步。<br>
+            她選擇將情感壓在心底，守住應有的分寸。<br><br>
+            兩人之間，仍留有一線距離。
+            </div>
+<div class="characters">
+        <img class="char left " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3738.png">
+        <img class="char right " src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3736.png">
+    </div>
+        </div>
+
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene5_13')">繼續</button>
+    
+</div>
+
+
+:: scene_reconcile_A {"position":"75,1900","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3725.jpeg">
+    <div class="scene-overlay"></div>
+
+    <div class="scene-title">選擇結果</div>
+
+    <div class="dialogue-box" style="top:44%;">
+
+        <div class="dialogue-text" style="text-align:center;">
+            旁白：甄嬛輕輕放下心中的防備。<br>
+            她選擇暫時原諒皇上。<br><br>
+            兩人之間的關係，雖未回到從前，卻稍稍緩和。
+        </div>
+
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene6_10')">繼續</button>
+    </div>
+
+</div>
+
+
+:: scene_reconcile_B {"position":"150,1900","size":"100,100"}
+
+
+<div class="scene-bg">
+
+    <img class="bg" src="https://raw.githubusercontent.com/901205marcus/Hsvbsh/main/IMG_3747.jpeg">
+    <div class="scene-overlay" style="background: rgba(0,0,0,0.65);"></div>
+
+    <div class="scene-title">選擇結果</div>
+
+    <div class="dialogue-box" style="top:44%;">
+
+        <div class="dialogue-text" style="text-align:center;">
+            旁白：甄嬛沒有回應皇上的情意。<br>
+            她將心門緊閉，選擇維持距離。<br><br>
+            兩人之間，依舊隔著無法跨越的裂痕。
+        </div>
+
+    </div>
+
+    <div class="next-btn-wrap">
+        <button class="choice-btn" onclick="SugarCube.Engine.play('scene6_10')">繼續</button>
+    </div>
+
+</div>
+
+
+:: StoryScript [script]
+setup.playBGM = function (src) {
+
+    // ⭐ 無論如何先停掉舊的
+    if (window.bgm) {
+        window.bgm.pause();
+        window.bgm.currentTime = 0;
+        window.bgm = null;
+    }
+
+    // ⭐ 建立新的音樂
+    window.bgm = new Audio(src);
+    window.bgm.loop = true;
+    window.bgm.volume = 0.5;
+
+    const p = window.bgm.play();
+    if (p !== undefined) {
+        p.catch(err => console.log("播放失敗：", err));
+    }
+};
+
+setup.stopBGM = function () {
+    if (window.bgm) {
+        window.bgm.pause();
+        window.bgm = null;
+    }
+};
+
+:: StoryStylesheet [stylesheet]
+.petals {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.petal {
+    position: absolute;
+    top: -60px;
+    font-size: 20px;
+    opacity: 0.75;
+    animation-name: sakuraFall;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sakuraFall {
+    0% {
+        transform: translateY(-60px) translateX(0px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    25% {
+        transform: translateY(25vh) translateX(30px) rotate(90deg);
+    }
+    50% {
+        transform: translateY(50vh) translateX(-20px) rotate(180deg);
+    }
+    75% {
+        transform: translateY(75vh) translateX(35px) rotate(270deg);
+    }
+    100% {
+        transform: translateY(110vh) translateX(-15px) rotate(360deg);
+        opacity: 0.2;
+    }
+}
+
+
+
+.scene-bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    font-family: "Noto Serif TC", serif;
+}
+
+.scene-bg img.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.scene-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.40);
+}
+
+.characters {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.char {
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    max-height: 88%;
+    object-fit: contain;
+    transition: all 0.35s ease;
+    opacity: 0.35;
+    filter: brightness(0.68);
+    transform: scale(0.96);
+}
+
+.char.left {
+    left: 2%;
+}
+
+.char.right {
+    right: 2%;
+}
+
+.char.active {
+    opacity: 1;
+    filter: brightness(1.05) drop-shadow(0 0 18px rgba(255,255,255,0.18));
+    transform: scale(1.03);
+}
+
+.nameplate {
+    position: absolute;
+    top: -16px;
+    right: 16px;
+    padding: 4px 14px;
+    background: rgba(20,20,20,0.85);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 8px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.dialogue-box {
+    position: absolute;
+    top: 35%;                
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;             
+    min-height: 110px;
+    padding: 5px 10px;
+    background: rgba(10,10,10,0.55);
+    border: 1px solid rgba(255,255,255,0.20);
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    z-index: 5;
+}
+.dialogue-text {
+    font-size: 24px;
+    line-height: 1.8;
+    text-shadow: 0 0 6px black;
+}
+
+.next-btn-wrap {
+    position: absolute;
+    right: 7%;
+    bottom: 8%;
+    z-index: 7;
+}
+
+.choice-wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0%;
+    width: 82%;
+    z-index: 8;
+    text-align: center;
+}
+
+.choice-title {
+    margin-bottom: 150px;
+    font-size: 24px;
+    text-shadow: 0 0 6px black;
+}
+
+.choice-btn {
+    display: block;
+    width: 80%;                 /* ⭐ 控制寬度 */
+    margin: 0px auto;           /* ⭐ 控制間距（越小越靠近） */
+    padding: 5px 10px;         /* ⭐ 控制厚度 */
+    background: rgba(0,0,0,0.55);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-shadow: 0 0 6px black;
+    transition: all 0.25s ease;
+}
+
+.choice-btn:hover {
+    background: rgba(255,255,255,0.25);
+    transform: scale(1.03);
+}
+.scene-title {
+    position: absolute;
+    top: 7%;
+    width: 100%;
+    text-align: center;
+    font-size: 38px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 8px black, 0 0 18px black;
+    z-index: 5;
+}
